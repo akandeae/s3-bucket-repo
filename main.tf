@@ -1,15 +1,12 @@
-
-
-# Define the required Terraform version
 terraform {
-  required_version = ">= 0.12"
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
-      version = "~> 4.0"
+      source = "hashicorp/aws"
+      version = "5.54.1"
     }
   }
 }
+
 
 # Configure the AWS provider
 provider "aws" {
